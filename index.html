@@ -15,13 +15,9 @@ h1
 </svg>
 <script>
     function rand() {
-    let arr =[];
      let r = Math.random()*255;
      let g = Math.random()*255;
      let b = Math.random()*255;
-     arr.push(r)
-     arr.push(g)
-     arr.push(b)
  
     let shape = document.getElementById("r1");
     shape.style.fill = `rgb(${r},${g},${b})`
