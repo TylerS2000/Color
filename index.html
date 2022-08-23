@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>color</title> 
+</head>
+<style>
+h1 
+{ text-align:center;
+    }
+</style>
+<body>
+<h1 id="p">Click for a Random Color</h1>
+
+<button type="button" id="mybtn" onclick=rand()> Randomize </button>
+<svg width= "10000" height = "10000" id="color"> <rect id="r1" width = "10000" height="10000" style ="fill:rgb(0,0,0)"/>;
+</svg>
+<script>
+    function rand() {
+    let arr =[];
+     let r = Math.random()*255;
+     let g = Math.random()*255;
+     let b = Math.random()*255;
+     arr.push(r)
+     arr.push(g)
+     arr.push(b)
+ 
+    let shape = document.getElementById("r1");
+    shape.style.fill = `rgb(${r},${g},${b})`
+   
+    
+    }
+</script>
+</body>
+</html>
